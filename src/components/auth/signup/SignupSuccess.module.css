@@ -1,0 +1,49 @@
+.successContainer {
+  max-width: 380px;
+  margin: 3.5rem auto;
+  background: #fff;
+  padding: 2.4rem 1.6rem 2.8rem 1.6rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 20px rgba(24,160,251,0.09);
+  text-align: center;
+}
+
+.icon {
+  font-size: 3.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+
+.heading {
+  font-size: 1.38rem;
+  font-weight: 700;
+  color: #202244;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+.text {
+  font-size: 1.06rem;
+  color: #555779;
+  margin-bottom: 1.2rem;
+  line-height: 1.65;
+}
+
+.redirectText {
+  font-size: 0.97rem;
+  color: #18A0FB;
+  margin-bottom: 0.6rem;
+}
+
+.loginLink {
+  color: #18A0FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.04rem;
+  display: inline-block;
+  transition: text-decoration 0.17s;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,79 @@
+.authWrapper {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 380px;
+  margin: 2.5rem auto 0 auto;
+  padding: 2.5rem 1.2rem 2rem 1.2rem;
+  box-shadow: 0 6px 32px rgba(24,160,251,0.08);
+}
+
+.header h2 {
+  color: #202244;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input {
+  background: #f9f9f9;
+  border: 1.5px solid #e3e8f0;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  font-size: 1.07rem;
+  color: #202244;
+  outline: none;
+  font-weight: 500;
+  transition: border 0.16s;
+}
+
+.input:focus {
+  border: 1.5px solid #18A0FB;
+}
+
+.forgotRow {
+  text-align: right;
+  margin-bottom: 0.6rem;
+}
+
+.forgotLink {
+  color: #18A0FB;
+  font-size: 0.97rem;
+  text-decoration: none;
+}
+
+.primaryBtn {
+  background: #18A0FB;
+  color: #fff;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 8px;
+  font-size: 1.09rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.18s;
+}
+.primaryBtn:hover {
+  background: #116bbd;
+}
+
+.bottomText {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #202244;
+}
+
+.signupLink {
+  color: #18A0FB;
+  font-weight: 600;
+  margin-left: 5px;
+  text-decoration: none;
+}

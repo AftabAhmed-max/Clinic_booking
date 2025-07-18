@@ -1,0 +1,555 @@
+.home {
+  background: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Emergency Banner */
+.banner {
+  background: #f44336;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.7rem 0.3rem;
+  letter-spacing: 1.2px;
+  font-size: 1.01rem;
+}
+.banner a { color: #fff; text-decoration: underline; }
+
+
+.hero {
+  padding: 1.1rem 0.4rem 1.5rem 0.4rem;
+  text-align: center;
+  background: #18A0FB;
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 16px rgba(24,160,251,0.08);
+}
+
+.carouselWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: #e9f3fa;
+  display: block;      /* Change from flex to block! */
+  position: relative;
+}
+
+.carouselImg {
+  width: 100%;
+  height: 100%;
+  object-fit:cover ;
+  display: block;
+  border-radius: 0;
+  transition: opacity 0.4s;
+}
+
+@media (max-width: 600px) {
+  .carouselWrapper {
+    aspect-ratio: 16 / 10;
+    border-radius: 13px;
+  }
+}
+
+.heroText h1 {
+  font-size: 1.27rem;
+  font-weight: 800;
+  margin: 0.25rem 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.heroText p {
+  margin-bottom: 1.08rem;
+  color: #e6f5ff;
+  font-size: 1.02rem;
+}
+.ctaBtn {
+  display: inline-block;
+  background: #fff;
+  color: #18A0FB;
+  padding: 0.58rem 1.5rem;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(24,160,251,0.13);
+  font-size: 1.07rem;
+  margin-top: 0.1rem;
+  transition: background 0.18s, color 0.17s;
+}
+.ctaBtn:hover { background: #d3edff; color: #1167b1; }
+
+.about {
+  padding: 2.2rem 1rem 1.2rem 1rem;
+  text-align: center;
+}
+
+.about h2 { 
+  font-size: 1.2rem; 
+  color: #18A0FB; 
+  margin-bottom: 0.5rem; 
+}
+
+.about p { 
+  color: #202244; 
+  margin-bottom: 1.2rem; 
+  font-size: 1.07rem; 
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+.achievements > div {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  min-width: 105px;
+  box-shadow: 0 2px 8px rgba(24,160,251,0.05);
+}
+
+.achievements strong {
+  color: #18A0FB;
+  display: block;
+  font-size: 1.19rem;
+  margin-bottom: 0.2rem;
+}
+.achievements span { 
+  color: #555; 
+  font-size: 0.97rem; 
+}
+
+.services {
+  padding: 2.1rem 1rem 1.2rem 1rem;
+}
+.services h2 { font-size: 1.18rem; color: #18A0FB; margin-bottom: 1.2rem; }
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.06rem;
+}
+.serviceCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(24,160,251,0.04);
+  padding: 1.05rem 0.7rem 1rem 0.7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  gap: 0.7rem;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceIcon {
+  font-size: 1.4rem;
+  color: #18A0FB;
+  margin-top: 0.13rem;
+}
+.serviceTitle {
+  font-weight: 700;
+  font-size: 1.01rem;
+  color: #202244;
+}
+.serviceDesc {
+  font-size: 0.97rem;
+  color: #5a5c6e;
+  text-align: center;
+}
+.seeMore {
+  display: block;
+  margin: 1.1rem auto 0 auto;
+  background: #18A0FB;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.07rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.seeMore:hover { background: #1290e7; }
+
+.doctors {
+  padding: 2.1rem 1rem 1.2rem 1rem;
+  text-align: center;
+}
+.doctors h2 { 
+  font-size: 1.15rem; 
+  color: #18A0FB; 
+  margin-bottom: 1.2rem; 
+}
+
+.doctorCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.arrowBtn {
+  background: #eaf6ff;
+  color: #18A0FB;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.33rem;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(24,160,251,0.06);
+  cursor: pointer;
+  margin: 0 0.1rem;
+  transition: background 0.15s, color 0.15s;
+}
+.arrowBtn:hover { background: #cde9ff; color: #1167b1; }
+.doctorCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(24,160,251,0.05);
+  padding: 1.1rem 1rem;
+  min-width: 210px;
+  max-width: 98vw;
+}
+.doctorPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.45rem;
+  border: 2px solid #18A0FB;
+}
+.doctorName { font-weight: 700; font-size: 1.05rem; color: #202244; }
+.doctorTitle { font-size: 0.97rem; color: #5a5c6e; margin-bottom: 0.2rem; }
+.doctorSpec { color: #18A0FB; font-size: 0.96rem; margin-bottom: 0.13rem; }
+.doctorAchv { font-size: 0.9rem; color: #878ca3; }
+
+.testimonials {
+  padding: 2.1rem 1rem 1.2rem 1rem;
+  text-align: center;
+}
+.testimonials h2 { font-size: 1.12rem; color: #18A0FB; margin-bottom: 1.08rem; }
+.testiCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.testiCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(24,160,251,0.05);
+  padding: 1.1rem 1.1rem;
+  min-width: 210px;
+  max-width: 98vw;
+}
+.testiText { font-size: 1.05rem; color: #202244; margin-bottom: 0.8rem; }
+.testiUser { color: #18A0FB; font-weight: 700; font-size: 1.01rem; }
+.testiUserIcon { margin-right: 0.3rem; font-size: 1.12rem; }
+.testiRating { color: #f7c240; margin-left: 0.3rem; font-size: 1.11rem; }
+
+.footer {
+  background: #202244;
+  color: #fff;
+  padding: 2.3rem 1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  margin-top: 2.5rem;
+  margin-top: auto;
+  border-radius: 20px 20px 0 0;
+}
+.footer a { color: #18A0FB; text-decoration: underline; }
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: #232355;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.feedbackForm input, .feedbackForm textarea {
+  background: #fff;
+  color: #202244;
+  border: none;
+  border-radius: 7px;
+  padding: 0.68rem 0.8rem;
+  font-size: 1.01rem;
+}
+.feedbackForm textarea { min-height: 60px; }
+.feedbackForm button {
+  background: #18A0FB;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.06rem;
+  padding: 0.7rem 0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.feedbackForm button:hover { background: #1393e6; }
+.quickLinks {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  font-size: 1.05rem;
+}
+.quickLinks a:hover { color: #fff; text-decoration: underline; }
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  
+  .carouselImg {
+    object-fit: fill;
+  }
+
+  .heroText h1 {
+    font-size: 1.85rem;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  .about h2 { 
+    font-size: 1.5rem; 
+  }
+
+  .about p { 
+    font-size: 1.25rem; 
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services h2 { 
+    font-size: 1.5rem; 
+  }
+
+  .serviceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials h2 {
+    font-size: 1.50rem;
+  }
+
+  .testiCard {
+    min-width: 480px;
+    max-width: 600px;
+    padding: 2rem 2rem;
+  }
+
+  .testiText {
+    font-size: 1.25rem;
+  }
+
+  .testiUser {
+    font-size: 1.12rem;
+  }
+
+  .testiRating {
+    font-size: 1.35rem;
+  }
+
+  .doctors h2 { 
+    font-size: 1.5rem; 
+  }
+
+  .doctorCard {
+    min-width: 340px;
+    max-width: 380px;
+    padding: 2rem 1.6rem;
+  }
+  .doctorPhoto {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1.2rem;
+  }
+  .doctorName {
+    font-size: 1.3rem;
+  }
+  .doctorTitle {
+    font-size: 1.12rem;
+  }
+  .doctorSpec {
+    font-size: 1.09rem;
+  }
+  .doctorAchv {
+    font-size: 1rem;
+  }
+
+  .footer {
+    max-width: 800px;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px 0 0;
+  }
+
+
+}
+
+/* --------- Desktop (Large Screens) --------- */
+@media (min-width: 1025px) {
+  .carouselImg {
+    object-fit: fill;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .heroText p {
+    font-size: 1.25rem;
+  }
+
+  .about h2 { 
+    font-size: 1.75rem; 
+  }
+
+  .about p { 
+    font-size: 1.5rem; 
+  }
+
+  .achievements strong {
+    font-size: 1.40rem;
+  }
+
+  .achievements span { 
+    font-size: 1.2rem; 
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services h2 { 
+    font-size: 1.75rem;  
+  }
+
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.06rem;
+  }
+
+  .serviceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceIcon {
+    font-size: 1.8rem;
+  }
+
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+  .serviceDesc {
+    font-size: 1.1;
+  }
+
+  .testimonials h2 {
+    font-size: 1.75rem;
+  }
+
+  .testiCard {
+    min-width: 480px;
+    max-width: 600px;
+    padding: 2rem 2rem;
+  }
+
+  .testiText {
+    font-size: 1.25rem;
+  }
+
+  .testiUser {
+    font-size: 1.12rem;
+  }
+
+  .testiRating {
+    font-size: 1.35rem;
+  }
+
+  .doctors h2 { 
+    font-size: 1.75rem; 
+  }
+
+  .doctorCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .doctorCard {
+    min-width: 220px;
+    max-width: 300px;
+    flex: 1 1 0;
+  }
+  .arrowBtn {
+    display: none !important;
+  }
+  .doctorPhoto {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1.2rem;
+  }
+  .doctorName {
+    font-size: 1.3rem;
+  }
+  .doctorTitle {
+    font-size: 1.12rem;
+  }
+  .doctorSpec {
+    font-size: 1.09rem;
+  }
+  .doctorAchv {
+    font-size: 1rem;
+  }
+
+  .footer {
+    max-width: 800px;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+
+

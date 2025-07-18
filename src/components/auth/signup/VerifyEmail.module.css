@@ -1,0 +1,89 @@
+.verifyContainer {
+  max-width: 380px;
+  margin: 2.2rem auto;
+  background: #fff;
+  padding: 2.1rem 1.3rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 20px rgba(24,160,251,0.09);
+  text-align: center;
+}
+.heading {
+  font-size: 1.29rem;
+  font-weight: 700;
+  color: #202244;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.2px;
+}
+.infoText {
+  color: #343455;
+  font-size: 1.07rem;
+  margin-bottom: 1.25rem;
+}
+.infoText span {
+  color: #18a0fb;
+  font-weight: 600;
+  word-break: break-all;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.input {
+  border: 1.3px solid #e2e7f5;
+  border-radius: 7px;
+  padding: 0.89rem 1.1rem;
+  font-size: 1.13rem;
+  background: #f9f9f9;
+  color: #202244;
+  outline: none;
+  text-align: center;
+  letter-spacing: 6px;
+  font-family: monospace;
+}
+.input:focus {
+  border: 1.3px solid #18a0fb;
+  background: #fff;
+}
+.button {
+  background: #18A0FB;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 0.2rem;
+}
+.button:hover {
+  background: #1290e7;
+}
+.error {
+  color: #F44336;
+  font-size: 0.97rem;
+  margin-top: -0.4rem;
+  margin-bottom: 0.7rem;
+}
+.resend {
+  margin-top: 1.19rem;
+  color: #232244;
+  font-size: 1rem;
+}
+.resendBtn {
+  background: none;
+  border: none;
+  color: #18A0FB;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+.resendBtn:disabled {
+  color: #aacfed;
+  cursor: not-allowed;
+}
+.timer {
+  color: #888;
+  font-size: 0.96rem;
+}

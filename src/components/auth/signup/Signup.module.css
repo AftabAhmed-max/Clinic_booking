@@ -1,0 +1,72 @@
+.signupContainer {
+  max-width: 380px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2.1rem 1.1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 20px rgba(24,160,251,0.09);
+  text-align: center;
+}
+@media (max-width: 440px) {
+  .signupContainer {
+    margin: 0.5rem;
+    padding: 1.2rem 0.3rem;
+  }
+}
+
+.heading {
+  font-size: 1.37rem;
+  font-weight: 700;
+  color: #202244;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.signupInput {
+  border: 1.3px solid #e2e7f5;
+  border-radius: 7px;
+  padding: 0.89rem 1.1rem;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: #202244;
+  outline: none;
+  transition: border 0.17s;
+}
+.signupInput:focus {
+  border: 1.3px solid #18a0fb;
+  background: #fff;
+}
+.signupButton {
+  background: #18A0FB;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.78rem 0;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 0.2rem;
+}
+.signupButton:hover {
+  background: #1290e7;
+}
+.loginText {
+  margin-top: 1.28rem;
+  font-size: 0.97rem;
+  color: #202244;
+  text-align: center;
+}
+.loginText a {
+  color: #18a0fb;
+  text-decoration: none;
+  font-weight: 600;
+}
+.loginText a:hover {
+  text-decoration: underline;
+}
