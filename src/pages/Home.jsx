@@ -1,9 +1,8 @@
 import styles from "./Home.module.css";
 import { FaUserMd, FaHeartbeat, FaStethoscope, FaPhoneAlt, FaStar } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 import useIsDesktop from "../components/common/Useisdesktop"
-
-
 
 // Dummy carousel images
 const carouselImages = [
@@ -89,7 +88,7 @@ export default function Home() {
         <div className={styles.heroText}>
           <h1>Your Health, Our Priority</h1>
           <p>Book appointments, consult expert doctors, and access quality care—all in one place.</p>
-          <a className={styles.ctaBtn} href="/booking">Book Appointment</a>
+          <Link className={styles.ctaBtn} to="/booking">Book Appointment</Link>
         </div>
       </section>
 
@@ -193,9 +192,9 @@ export default function Home() {
           <button type="submit">Send Feedback</button>
         </form>
         <div className={styles.quickLinks}>
-          <a href="/">Home</a>
-          <a href="/booking">Book Appointment</a>
-          <a href="/login">Login</a>
+          <Link to="/">Home</Link>
+          <Link to="/booking">Book Appointment</Link>
+          <Link to="/login">Login</Link>
         </div>
       </footer>
     </div>
